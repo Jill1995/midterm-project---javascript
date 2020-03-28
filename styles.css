@@ -1,0 +1,155 @@
+#textinput {
+  width: 410px;
+  background-color: teal;
+  float: left;
+  height: 700px;
+  margin: 0px;
+}
+
+#info1 {
+  margin-left: 143px;
+  color: white;
+  font-size: 12px;
+}
+table {
+  margin-left: 143px;
+  margin-top: 10px;
+}
+td {
+  padding: 15px;
+  border-radius: 5px;
+  border: 0.5px solid white;
+}
+tr {
+  height: 15px;
+}
+h2 {
+  /* margin-left: 20px; */
+  text-align: center;
+  margin-top: 40px;
+  color: white;
+  /* text-shadow: 2px 2px 5px rgb(201, 201, 201); */
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+h3 {
+  font-size: 16px;
+  text-align: center;
+  /* margin-left: 20px; */
+  color: white;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+label {
+  font-size: 14px;
+  margin-left: 80px;
+  color: white;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+input[type="text"] {
+  padding: 5px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  margin-left: 10px;
+  background-color: teal;
+  color: white;
+  width: 40%;
+  border: 1px solid white;
+  box-sizing: border-box;
+  border-radius: 6px;
+}
+
+input[type="submit"] {
+  padding: 5px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  margin-left: 143px;
+  background-color: rgb(2, 107, 107);
+  color: white;
+  width: 40%;
+  border: 1px solid rgb(2, 107, 107);
+  box-sizing: border-box;
+  border-radius: 6px;
+  box-shadow: 2px 2px 3px rgb(1, 63, 63);
+}
+
+button {
+  padding: 5px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  margin-left: 143px;
+  margin-top: 10px;
+  background-color: rgb(66, 136, 136);
+  color: white;
+  width: 40%;
+  border: 1px solid rgb(66, 136, 136);
+  box-sizing: border-box;
+  border-radius: 6px;
+  box-shadow: 2px 2px 3px rgb(1, 63, 63);
+}
+
+#brush1 {
+  background-image: url("data/01.svg");
+  background-size: 60%;
+  padding: 20px;
+}
+
+#brush2 {
+  background-image: url("data/02.svg");
+  background-size: 60%;
+  padding: 18px;
+}
+
+#brush3 {
+  background-image: url("data/03.svg");
+  background-size: 60%;
+  padding: 18px;
+}
+
+#brush4 {
+  background-image: url("data/04.svg");
+  background-size: 60%;
+  padding: 18px;
+}
+
+.shrink:hover {
+  -webkit-transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  transform: scale(0.8);
+}
+
+#spinner {
+  visibility: hidden;
+  width: 80px;
+  height: 80px;
+
+  border: 2px solid #f3f3f3;
+  border-top: 3px solid #f25a41;
+  border-radius: 100%;
+
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+
+  animation: spin 1s infinite linear;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+#spinner.show {
+  visibility: visible;
+}

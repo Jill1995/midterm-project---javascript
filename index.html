@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+
+    <title>Pattern Recolor</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="p5.js"></script>
+  </head>
+
+  <body>
+    <div id="textinput">
+      <header>
+        <h2>Ballroom with Brushes!</h2>
+      </header>
+
+      <p id="GFG_UP"></p>
+      <br />
+
+      <h3>Type the colors to generate palettes :</h3>
+      <form id="colors">
+        <label for="color1"> Color 1</label>
+        <input type="text" id="color1" />
+        <br /><br />
+        <label for="color2"> Color 2</label>
+        <input type="text" id="color2" />
+        <br /><br />
+        <label for="color3"> Color 3</label>
+        <input type="text" id="color3" />
+        <br /><br />
+        <label for="color4"> Color 4</label>
+        <input type="text" id="color4" />
+        <br /><br />
+        <label for="color5"> Color 5</label>
+        <input type="text" id="color5" />
+        <br /><br />
+        <input type="submit" value="Find similar Palettes" id="scheme" />
+      </form>
+
+      <p
+        id="GFG_DOWN"
+        style="color:green; 
+		font-size: 5px;"
+      ></p>
+
+      <table style="position: relative;">
+        <tr>
+          <td id="col1" class="shrink"></td>
+          <td id="col2" class="shrink"></td>
+          <td id="col3" class="shrink"></td>
+          <td id="col4" class="shrink"></td>
+          <td id="col5" class="shrink"></td>
+        </tr>
+      </table>
+
+      <p id="info1">Select Brush Color ^^</p>
+      <table>
+        <tr>
+          <td id="brush1" class="shrink"></td>
+          <td id="brush2" class="shrink"></td>
+          <td id="brush3" class="shrink"></td>
+          <td id="brush4" class="shrink"></td>
+        </tr>
+      </table>
+
+      <p id="info1">Select Brush Shape ^^</p>
+
+      <button id="save">Save your drawing</button>
+      <button id="upload">Add to Creations</button>
+    </div>
+
+    <div id="canvas"></div>
+    <div id="spinner"></div>
+
+    <!-- script always before closing body tag -->
+    <script src="script.js"></script>
+  </body>
+</html>
