@@ -14,11 +14,11 @@
         <h2>Ballroom with Brushes!</h2>
       </header>
 
-      <p id="GFG_UP"></p>
+      <!-- <p id="GFG_UP"></p> -->
       <br />
 
       <h3>Type the colors to generate palettes :</h3>
-      <form id="colors">
+      <form id="colors" class="colorNames">
         <label for="color1"> Color 1</label>
         <input type="text" id="color1" />
         <br /><br />
@@ -37,35 +37,31 @@
         <input type="submit" value="Find similar Palettes" id="scheme" />
       </form>
 
-      <p
-        id="GFG_DOWN"
-        style="color:green; 
-		font-size: 5px;"
-      ></p>
+      <p id="GFG_DOWN" style="color: green; font-size: 5px;"></p>
 
       <table style="position: relative;">
         <tr>
-          <td id="col1" class="shrink"></td>
-          <td id="col2" class="shrink"></td>
-          <td id="col3" class="shrink"></td>
-          <td id="col4" class="shrink"></td>
-          <td id="col5" class="shrink"></td>
+          <td id="col1" class="prefColor"></td>
+          <td id="col2" class="prefColor"></td>
+          <td id="col3" class="prefColor"></td>
+          <td id="col4" class="prefColor"></td>
+          <td id="col5" class="prefColor"></td>
         </tr>
       </table>
 
       <p id="info1">Select Brush Color ^^</p>
       <table>
         <tr>
-          <td id="brush1" class="shrink"></td>
-          <td id="brush2" class="shrink"></td>
-          <td id="brush3" class="shrink"></td>
-          <td id="brush4" class="shrink"></td>
+          <td id="brush1" class="bru"></td>
+          <td id="brush2" class="bru"></td>
+          <td id="brush3" class="bru"></td>
+          <td id="brush4" class="bru"></td>
         </tr>
       </table>
 
       <p id="info1">Select Brush Shape ^^</p>
 
-      <button id="save">Save your drawing</button>
+      <button id="saveImage">Save your drawing</button>
       <button id="upload">Add to Creations</button>
     </div>
 
